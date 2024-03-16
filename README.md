@@ -5,7 +5,7 @@
 The primary objective of the project is to clean, analyze, and normalize the vehicle sales dataset to derive meaningful insights and facilitate efficient data management. By employing SQL queries, the project aims to address inconsistencies, identify patterns, and structure the data for further analysis.
 
 ## Dataset Description
-The ["Vehicle Sales and Market Trends Dataset"](https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data/data) encompasses details such as the year, make, model, trim, body type, transmission type, VIN (Vehicle Identification Number), state of registration, condition rating, odometer reading, exterior and interior colors, seller information, Manheim Market Report (MMR) values, selling prices, and sale dates.
+The [Vehicle Sales and Market Trends Dataset](https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data/data) encompasses details such as the year, make, model, trim, body type, transmission type, VIN (Vehicle Identification Number), state of registration, condition rating, odometer reading, exterior and interior colors, seller information, Manheim Market Report (MMR) values, selling prices, and sale dates.
 
 ## Description of columns
 - `Year`: The manufacturing year of the vehicle (e.g., 2015)
