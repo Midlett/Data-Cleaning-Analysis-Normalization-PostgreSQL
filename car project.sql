@@ -18,7 +18,7 @@ CREATE TABLE cars (
 	vin         	VARCHAR(50),
 	state       	VARCHAR(50),
 	condition   	real,		
-	odometer  	 	real,			
+	odometer  	real,			
 	color       	VARCHAR(50),
 	interior    	VARCHAR(50),
 	seller      	VARCHAR(50),
