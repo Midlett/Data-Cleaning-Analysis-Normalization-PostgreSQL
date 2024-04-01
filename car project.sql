@@ -24,7 +24,7 @@ CREATE TABLE cars (
 	seller      	VARCHAR(50),
 	mmr         	real,
 	sellingprice	real,
-	saledate  		VARCHAR(100)
+	saledate  	VARCHAR(100)
 );
 
 -- Looking on a table.
@@ -116,7 +116,6 @@ SELECT
 	COUNT(*)
 FROM cars
 GROUP BY state; -- We can see that state column have 26 values (e.g. "3vwd............") that doesn't match with U.S. state and territory abbreviations. These records should be removed from data set as we could not verify them. I would also recommend changing state abbreviations to full names.
-
 
 SELECT
 	odometer,
@@ -567,7 +566,7 @@ ORDER BY year DESC;
 -- Fact table.
 
 CREATE TABLE sales (
-	sales_id 		INT PRIMARY KEY,
+    sales_id 		INT PRIMARY KEY,
     vin 			VARCHAR(50),
     seller	 		VARCHAR(50),
     mmr 			REAL,
@@ -581,16 +580,16 @@ CREATE TABLE sales (
 CREATE TABLE vehicles (
     vin 			VARCHAR(50) PRIMARY KEY,
     year 			INT,
-	state			VARCHAR(50),
+    state			VARCHAR(50),
     make			VARCHAR(50),
     model 			VARCHAR(50),
     trim 			VARCHAR(50),
     body 			VARCHAR(50),
-    transmission 	VARCHAR(50),
-    condition 		REAL,
-    odometer 		REAL,
+    transmission 		VARCHAR(50),
+    condition 			REAL,
+    odometer 			REAL,
     color 			VARCHAR(50),
-    interior 		VARCHAR(50)
+    interior 			VARCHAR(50)
 );
 
 -- Inserting data into dimension table.
