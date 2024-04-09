@@ -342,7 +342,7 @@ FROM clean_cars_view;
 -- Creating clean cars table.
 
 CREATE TABLE clean_cars (
-	id				INT PRIMARY KEY,
+	id		INT PRIMARY KEY,
 	year         	INT,         
 	make        	VARCHAR(50),
 	model       	VARCHAR(50),
@@ -352,13 +352,13 @@ CREATE TABLE clean_cars (
 	vin         	VARCHAR(50),
 	state       	VARCHAR(50),
 	condition   	real,		
-	odometer  	 	real,			
+	odometer  	real,			
 	color       	VARCHAR(50),
 	interior    	VARCHAR(50),
 	seller      	VARCHAR(50),
 	mmr         	real,
 	selling_price	real,
-	sale_date  		timestamp with time zone
+	sale_date  	timestamp with time zone
 );
 
 -- Inserting data from view into clean_cars table.
@@ -567,9 +567,9 @@ ORDER BY year DESC;
 
 CREATE TABLE sales (
     sales_id 		INT PRIMARY KEY,
-    vin 			VARCHAR(50),
-    seller	 		VARCHAR(50),
-    mmr 			REAL,
+    vin 		VARCHAR(50),
+    seller	 	VARCHAR(50),
+    mmr 		REAL,
     selling_price 	REAL,
     sale_date 		TIMESTAMP,
     FOREIGN KEY (vin) REFERENCES Vehicles(vin)
@@ -707,8 +707,8 @@ CREATE TABLE types (
 );
 
 CREATE TABLE transmissions (
-	transmission	VARCHAR(50),
-	transmission_id	SERIAL PRIMARY KEY 
+	transmission		VARCHAR(50),
+	transmission_id		SERIAL PRIMARY KEY 
 );
 
 CREATE TABLE states (
@@ -806,14 +806,14 @@ ORDER BY seller ASC;
 -- Creating vehicle_surr table.
 
 CREATE TABLE vehicles_surr (
-    vin 				VARCHAR(50) PRIMARY KEY,
-    year 				INT,
-	state_id			INT,
-    make_id				INT,
+    vin 			VARCHAR(50) PRIMARY KEY,
+    year 			INT,
+	state_id		INT,
+    make_id			INT,
     model_id 			INT,
     trim_id 			INT,
     body_id 			INT,
-    transmission_id 	INT,
+    transmission_id 		INT,
     condition 			REAL,
     odometer 			REAL,
     color_id 			INT,
@@ -833,10 +833,10 @@ CREATE TABLE vehicles_surr (
 CREATE TABLE sales_surr (
 	sales_id 		INT PRIMARY KEY,
     vin 			VARCHAR(50),
-    seller_id	 	INT,
+    seller_id	 		INT,
     mmr 			REAL,
-    selling_price 	REAL,
-    sale_date 		TIMESTAMP,
+    selling_price 		REAL,
+    sale_date 			TIMESTAMP,
     FOREIGN KEY (vin) REFERENCES vehicles(vin),
 	FOREIGN KEY (seller_id) REFERENCES sellers(seller_id)
 );
